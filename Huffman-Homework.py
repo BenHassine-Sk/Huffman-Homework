@@ -116,7 +116,7 @@ freqs_english = {
 
 english_tree = huffman_tree(freqs_english)
 
-# Note: punctuation is removed because it is not present
+# Note: I removed punctuation because it is not present
 # in the English frequency dictionary
 text = "Huffman coding is a data compression algorithm"
 text = text.lower()
@@ -132,3 +132,4 @@ encoded_bits = len(encoded)
 print("Original length (bits):", original_bits)
 print("Encoded length (bits):", encoded_bits)
 print("Compression ratio:", encoded_bits / original_bits)
+
